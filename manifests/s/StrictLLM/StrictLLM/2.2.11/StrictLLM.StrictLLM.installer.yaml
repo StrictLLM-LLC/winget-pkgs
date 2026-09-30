@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: StrictLLM.StrictLLM
+PackageVersion: 2.2.11
+InstallerType: nullsoft
+InstallModes:
+  - interactive
+  - silent
+  - silentWithProgress
+UpgradeBehavior: install
+ProductCode: b97f3dde-3d3e-5c96-90a9-e425af909f62
+AppsAndFeaturesEntries:
+  - DisplayName: StrictLLM Chat 2.2.11
+    Publisher: StrictLLM
+    DisplayVersion: 2.2.11
+Installers:
+  - Architecture: x64
+    Scope: user
+    InstallerUrl: https://github.com/StrictLLM-LLC/download/releases/download/v2.2.11/StrictLLM-2.2.11-windows-x64-StrictLLM.Chat.Setup.2.2.11.exe
+    InstallerSha256: AB58A10020487A39AD70B7580480786C6DF38EABF011069AA51C4BEC0D8ADA80
+    InstallerSwitches:
+      Custom: /currentuser
+  - Architecture: x64
+    Scope: machine
+    InstallerUrl: https://github.com/StrictLLM-LLC/download/releases/download/v2.2.11/StrictLLM-2.2.11-windows-x64-StrictLLM.Chat.Setup.2.2.11.exe
+    InstallerSha256: AB58A10020487A39AD70B7580480786C6DF38EABF011069AA51C4BEC0D8ADA80
+    InstallerSwitches:
+      Custom: /allusers
+ManifestType: installer
+ManifestVersion: 1.12.0
