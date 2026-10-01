@@ -12,7 +12,6 @@ ProductCode: b97f3dde-3d3e-5c96-90a9-e425af909f62
 AppsAndFeaturesEntries:
   - DisplayName: StrictLLM Chat 2.2.8
     Publisher: StrictLLM
-    DisplayVersion: 2.2.8
 Installers:
   - Architecture: x64
     Scope: user
